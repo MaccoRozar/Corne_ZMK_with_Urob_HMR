@@ -12,6 +12,11 @@
 #include "zmk-helpers/unicode-chars/french.dtsi" // unicode-chars for french
 #define ZMK_HELPER_KEEP_NATIVE 1 // pour garder les ZMK_MACRO natives
 
+/ {
+    chosen {
+      zmk,matrix_transform = &five_column_transform;
+    };
+
 #define QUICK_TAP_MS 175 // 175 valeur d’Urob
 
 /* Homerow mods */
