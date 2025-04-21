@@ -52,16 +52,16 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
     };
 
 // Left-hand home row mods
-#define HOME_A &HRM_custom LGUI A
-#define HOME_S &HRM_custom LALT S
-#define HOME_D &HRM_custom LCTRL D
-#define HOME_F &HRM_custom LSHIFT F    // if used
+#define HOME_A &hml LGUI A
+#define HOME_S &hml LALT S
+#define HOME_D &hml LCTRL D
+#define HOME_F &hml LSHIFT F    // if used
 
 // Right-hand home row mods
-#define HOME_J &HMR_custom RSHIFT J    // if used
-#define HOME_K &HRM_custom RCTRL K
-#define HOME_L &HRM_custom RALT L 
-#define HOME_SMCLN &HRM_custom RGUI SEMICOLON
+#define HOME_J &hmr RSHIFT J    // if used
+#define HOME_K &hmr RCTRL K
+#define HOME_L &hmr RALT L 
+#define HOME_SMCLN &hmr RGUI SEMICOLON
 
 // Left-hand thumbs
 #define L_THUMB1 &kp LCTRL
