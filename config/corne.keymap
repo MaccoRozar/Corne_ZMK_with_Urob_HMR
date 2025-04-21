@@ -124,13 +124,13 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
                         display-name = "Symbols";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp CARET   &kp LESS_THAN &kp GREATER_THAN &kp DOLLAR   &kp PERCENT     &kp AT        &kp AMPS      &kp STAR      &kp LS(APOS)  &kp GRAVE
+    RA(Q)         RA(W)         RA(E)         RA(R)         RA(T)           RA(Y)         RA(U)         RA(I)         RA(O)         RA(P)        
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LBRC      &kp LPAR      &kp RPAR      &kp RIGHT_BRACE &kp EQUAL     &kp BSLH      &kp PLUS      &kp MINUS     &kp FSLH      &kp DQT
+    RA(A)         RA(S)         RA(D)         RA(F)         RA(G)           RA(H)         RA(J)         RA(K)         RA(L)         RA(SMCLN)
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp TILDE     &kp LBKT      &kp RBKT      &kp UNDER     &kp LS(POUND)  &kp PIPE       &kp LS(EXCL)  &kp LS(SEMI)  &kp LS(COLON) &kp LS(QMARK)
+    RA(Z)         RA(X)         RA(C)         RA(V)         RA(B)           RA(N)         RA(M)         RA(COMMA)     RA(DOT)       RA(SLASH)
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                ___           ___           ___             ___           ___           ___          
+                                ___           ___           ___             ___           ___           ___
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
