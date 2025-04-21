@@ -51,6 +51,17 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
         };
     };
 
+   behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
 // Left-hand home row mods
 #define HOME_A &hml LGUI A
 #define HOME_S &hml LALT S
