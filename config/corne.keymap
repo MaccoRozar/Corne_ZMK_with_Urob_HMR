@@ -21,6 +21,9 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
 
+#define XXX &none
+#define ___ &trans
+
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
   ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced";            \
                tapping-term-ms = <280>; quick-tap-ms = <QUICK_TAP_MS>;         \
@@ -106,7 +109,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
                         display-name = "Nav";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP     &kp KP_DIVIDE &kp KP_N7     &kp KP_N8    &kp KP_N9      ___       
+    &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP     &kp KP_DIVIDE &kp KP_N7     &kp KP_N8    &kp KP_N9      XXX       
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN   &kp KP_SUBTRACT &kp KP_N4   &kp KP_N5     &kp KP_N6  &kp KP_N0     
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
