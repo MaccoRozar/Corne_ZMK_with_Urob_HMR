@@ -74,7 +74,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 // Right-hand home row mods
 #define HOME_J &hmr RSHIFT J    // if used
 #define HOME_K &hmr RCTRL K
-#define HOME_L &hmr RALT L 
+#define HOME_L &hmr LALT L 
 #define HOME_SMCLN &hmr RGUI SEMICOLON
 
 // Left-hand thumbs
