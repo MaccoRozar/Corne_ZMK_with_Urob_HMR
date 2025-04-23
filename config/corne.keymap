@@ -19,7 +19,7 @@
 #define ___ &trans
 #define c_Divide &kp RA(L)
 #define c_Substract &kp RA(K)
-#define c_Comma &kp Dot
+#define c_Comma &kp DOT
 #define c_Dot &kp N
 #define c_Plus &kp RA(J)
 #define c_fine_sp &kp LS(SPACE)
@@ -118,9 +118,9 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp TAB       &kp HOME      &kp UP        &kp END       &kp PAGE_UP     c_Substract   &kp KP_N7     &kp KP_N8    &kp KP_N9      c_Plus       
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN   c_Divide      &kp KP_N4   &kp KP_N5     &kp KP_N6  &kp KP_N0     
+    &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN   c_Divide      &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp KP_N0     
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           &kp K_VOL_DN  &kp K_MUTE    &kp K_VOL_UP  &kp LS(TAB)     c_Comma       &kp KP_N1     &kp KP_N2     &kp KP_N3     c_fine_sp    
+    &mo 3         &kp K_VOL_DN  &kp K_MUTE    &kp K_VOL_UP  &kp LS(TAB)     c_Comma       &kp KP_N1     &kp KP_N2     &kp KP_N3     c_fine_sp    
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                 ___           ___           &kp DELETE      ___           ___           ___          
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
