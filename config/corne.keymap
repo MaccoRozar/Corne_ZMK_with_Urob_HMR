@@ -5,7 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
+//#include <dt-bindings/zmk/keys.h> // overrided
+#include "incluse/dt-bindings/keys.h"
 #include <dt-bindings/zmk/bt.h>
 #include "zmk-helpers/helper.h" // à garder après #include <behaviors.dtsi>
 #include "zmk-helpers/key-labels/36.h" // key-position labels
@@ -17,12 +18,12 @@
 
 #define XXX &none
 #define ___ &trans
-#define c_Divide &kp RA(L)
-#define c_Substract &kp RA(K)
-#define c_Comma &kp DOT
-#define c_Dot &kp N
-#define c_Plus &kp RA(J)
-#define c_fine_sp &kp LS(SPACE)
+//#define c_Divide &kp RA(L)
+//#define c_Substract &kp RA(K)
+//#define c_Comma &kp DOT
+//#define c_Dot &kp N
+//#define c_Plus &kp RA(J)
+//#define c_fine_sp &kp LS(SPACE)
 
 
 /* Homerow mods */
@@ -75,14 +76,14 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 // Left-hand home row mods
 #define HOME_A &hml LGUI A
 #define HOME_S &hml LALT S
-#define HOME_D &hml LCTRL D
-#define HOME_F &hml LSHIFT F    // if used
+#define HOME_E &hml LCTRL E
+#define HOME_N &hml LSHIFT N    // if used
 
 // Right-hand home row mods
-#define HOME_J &hmr RSHIFT J    // if used
-#define HOME_K &hmr RCTRL K
-#define HOME_L &hmr LALT L 
-#define HOME_SMCLN &hmr RGUI SEMICOLON
+#define HOME_R &hmr RSHIFT R    // if used
+#define HOME_T &hmr RCTRL T
+#define HOME_I &hmr LALT I
+#define HOME_U &hmr RGUI U
 
 // Left-hand thumbs
 #define L_THUMB1 &kp LCTRL
@@ -101,11 +102,11 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
                         display-name = "Base";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U         &kp I         &kp O         &kp P        
+    &kp Q         &kp C         &kp O         &kp P         &kp W           &kp J         &kp M         &kp D         &kp _1dk         &kp Y        
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    HOME_A        HOME_S        HOME_D        &kp F         &kp G           &kp H         &kp J         HOME_K        HOME_L        HOME_SMCLN
+    HOME_A        HOME_S        HOME_E        &kp N         &kp F           &kpL         &kp R         HOME_T        HOME_I        HOME_U
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
+    &kp Z         &kp X         &kp MINUS         &kp V         &kp B           &kp DOT         &kp H         &kp G     &kp COMMA       &kp K
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                 L_THUMB1      L_THUMB2      L_THUMB3        R_THUMB1      R_THUMB2      R_THUMB3
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
