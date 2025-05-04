@@ -18,11 +18,9 @@
 
 #define XXX &none
 #define ___ &trans
-//#define c_Divide &kp RA(L)
-//#define c_Substract &kp RA(K)
-//#define c_Comma &kp DOT
-//#define c_Dot &kp N
-//#define c_Plus &kp RA(J)
+#define c_Divide &kp RA(I)
+//#define c_Substract &kp RA(T)
+//#define c_Plus &kp RA(R)
 //#define c_fine_sp &kp LS(SPACE)
 
 
@@ -102,11 +100,11 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
                         display-name = "Base";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp Q         &kp C         &kp O         &kp P         &kp W           &kp J         &kp M         &kp D         &kp _1dk         &kp Y        
+    &kp Q         &kp C         &kp O         &kp P         &kp W           &kp J         &kp M         &kp D         &kp ★         &kp Y        
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    HOME_A        HOME_S        HOME_E        &kp N         &kp F           &kpL         &kp R         HOME_T        HOME_I        HOME_U
+    HOME_A        HOME_S        HOME_E        &kp N         &kp F           &kpL          &kp R         HOME_T        HOME_I        HOME_U
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp Z         &kp X         &kp MINUS         &kp V         &kp B           &kp DOT         &kp H         &kp G     &kp COMMA       &kp K
+    &kp Z         &kp X         &kp MINUS     &kp V         &kp B           &kp DOT       &kp H         &kp G         &kp COMMA     &kp K
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                 L_THUMB1      L_THUMB2      L_THUMB3        R_THUMB1      R_THUMB2      R_THUMB3
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
@@ -121,7 +119,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN   c_Divide      &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp KP_N0     
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &lt 3 C_PP   &kp K_VOL_DN  &kp K_MUTE    &kp K_VOL_UP  &kp LS(TAB)     c_Comma       &kp KP_N1     &kp KP_N2     &kp KP_N3     c_fine_sp      // C_PP: Play / Pause (Consumer)
+    &lt 3 C_PP   &kp K_VOL_DN  &kp K_MUTE    &kp K_VOL_UP  &kp LS(TAB)      COMMA         &kp KP_N1     &kp KP_N2     &kp KP_N3     c_fine_sp      // C_PP: Play / Pause (Consumer)
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                 ___           ___           &lt 4 DELETE    &lt 4 SPACE   ___           ___          
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
