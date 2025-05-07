@@ -19,6 +19,7 @@
   delay-ms = <0>;                       // 0
 };
 
+/*
 &mmv_input_listener {
   warp {
     layers = <NAV>;
@@ -29,6 +30,7 @@
     input-processors = <&zip_xy_scaler 1 2>;
   };
 };
+*/
 
 / {
   zip_scroll_scaler: zip_scroll_scaler {
