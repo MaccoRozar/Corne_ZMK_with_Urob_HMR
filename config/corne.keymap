@@ -10,6 +10,7 @@
 #include "zmk-helpers/helper.h" // à garder après #include <behaviors.dtsi>
 #include "zmk-helpers/key-labels/36.h" // key-position labels
 #define ZMK_HELPER_KEEP_NATIVE 1 // pour garder les ZMK_MACRO natives
+#include "mouse.dtsi" // mouse emulation
 
 
 
