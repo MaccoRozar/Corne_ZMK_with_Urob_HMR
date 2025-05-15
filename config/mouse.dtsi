@@ -32,6 +32,13 @@
 };
 */
 
+&mmv_input_listener {
+  warp {
+    layers = <mouse>;
+    input-processors = <&zip_xy_scaler 3 1>;
+  };
+};
+
 / {
   zip_scroll_scaler: zip_scroll_scaler {
     compatible = "zmk,input-processor-scaler";
@@ -54,6 +61,13 @@
   };
 };
 */
+
+&msc_input_listener {
+  warp {
+    layers = <mouse>;
+    input-processors = <&zip_scroll_scaler 2 1>;
+  };
+};
 
 #define U_MS_U &mmv MOVE_UP
 #define U_MS_D &mmv MOVE_DOWN
