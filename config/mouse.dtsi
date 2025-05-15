@@ -34,7 +34,7 @@
 
 &mmv_input_listener {
   warp {
-    layers = <mouse>;
+    layers = <5>;
     input-processors = <&zip_xy_scaler 3 1>;
   };
 };
@@ -64,7 +64,7 @@
 
 &msc_input_listener {
   warp {
-    layers = <mouse>;
+    layers = <5>;
     input-processors = <&zip_scroll_scaler 2 1>;
   };
 };
