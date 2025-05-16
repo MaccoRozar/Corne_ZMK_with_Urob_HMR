@@ -85,15 +85,6 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 #define HOME_L &hmr LALT L 
 #define HOME_SMCLN &hmr RGUI SEMICOLON
 
-// Left-hand thumbs
-// #define L_THUMB1 &tog 1
-#define L_THUMB2 &bhm LSHIFT ESC
-#define L_THUMB3 &lt 1 BSPC
-
-// Right-hand thumbs
-#define R_THUMB1 &lt 1 SPACE
-#define R_THUMB2 &lt 2 RET
-// #define R_THUMB3 &mo 2
 
         keymap {
                 compatible = "zmk,keymap";
@@ -108,7 +99,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                &tog 1      &bhm LSHIFT ESC  &lt 1 BSPC     &lt 1 SPACE   &lt 2 RET      &tog 5
+                                &tog 1      &bhm LSHIFT ESC  &lt 1 BSPC     &lt 1 SPACE   &lt 2 RET     &tog 5
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -182,7 +173,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     XXX           XXX           XXX           XXX           XXX             U_WH_L        U_MS_L        U_MS_D        U_MS_R        U_WH_R
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    XXX           XXX           XXX           C_AL_FILES    C_AL_CALC       XXX           &mkp LCLK     &mkp MCLK      &mkp RCLK    XXX
+    XXX           XXX           XXX          &kp C_AL_FILES &kp C_AL_CALC   XXX           &mkp LCLK     &mkp MCLK      &mkp RCLK    XXX
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                 ___           ___           ___             ___           ___           &tog 5         
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
