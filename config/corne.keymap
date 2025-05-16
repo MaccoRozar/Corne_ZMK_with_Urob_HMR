@@ -16,6 +16,8 @@
 
 #define QUICK_TAP_MS 175 // 175 valeur d’Urob
 
+#define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
+
 #define XXX &none
 #define ___ &trans
 #define c_Divide &kp RA(L)
@@ -73,6 +75,18 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
         };
     };
 
+    /* momentary-layer when the keybind is held and a toggle-layer when it is tapped (https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=mo_tog#example-use-cases) */
+
+    behaviors {
+        mo_tog: behavior_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&tog>;
+        };
+    };
+
 // Left-hand home row mods
 #define HOME_A &hml LGUI A
 #define HOME_S &hml LALT S
@@ -99,7 +113,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                &tog 1      &bhm LSHIFT ESC  &lt 1 BSPC     &lt 1 SPACE   &lt 2 RET     &tog 5
+                                MO_TOG(1)   &bhm LSHIFT ESC  &lt 1 BSPC     &lt 1 SPACE   &lt 2 RET     MO_TOG(5)
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
