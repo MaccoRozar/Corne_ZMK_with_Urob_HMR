@@ -128,7 +128,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &lt 3 C_PP    &kp K_VOL_DN  &kp K_MUTE    &kp K_VOL_UP  &kp LS(TAB)     c_Comma       &kp KP_N1     &kp KP_N2     &kp KP_N3     c_fine_sp      // C_PP: Play / Pause (Consumer)
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                &tog 1      &bhm LSHIFT ESC &lt 4 DELETE    &lt 4 SPACE   &kp RET       XXX          
+                                &tog 1      &bhm LSHIFT ESC &lt 4 DELETE    &lt 4 SPACE   &kp RET       &tog 1          
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -183,13 +183,13 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
                         display-name = "Mouse";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    XXX           XXX           XXX           XXX           XXX             &kp PG_UP     U_WH_U        U_MS_U        U_WH_D        &kp PG_DN
+    &kp PG_UP     U_WH_U        U_MS_U        U_WH_D        &kp PG_DN       &kp PG_UP     U_WH_U        U_MS_U        U_WH_D        &kp PG_DN
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    XXX           XXX           XXX           XXX           XXX             U_WH_L        U_MS_L        U_MS_D        U_MS_R        U_WH_R
+    U_WH_L        U_MS_L        U_MS_D        U_MS_R        U_WH_R          U_WH_L        U_MS_L        U_MS_D        U_MS_R        U_WH_R
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    XXX           XXX           XXX          &kp C_AL_FILES &kp C_AL_CALC   XXX           &mkp LCLK     &mkp MCLK      &mkp RCLK    XXX
+   &kp C_AL_FILE  &mkp LCLK     &mkp MCLK      &mkp RCLK    &kp C_AL_CALC  &kp C_AL_FILE  &mkp LCLK     &mkp MCLK      &mkp RCLK    &kp C_AL_CALC
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                ___           ___           ___             ___           ___           &tog 5         
+                                &tog 5        ___           ___             ___           ___           &tog 5         
 //                            ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
